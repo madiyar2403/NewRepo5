@@ -1,0 +1,84 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model VirtualCashMachine.Models.VirtualCashMachine.VirtualCashMachineClass
+
+
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1 class="title is-1">Add order to Virtual Cash Machine</h1>
+
+<h4 class="subtitle is-4">Virtual Cash Machine</h4>
+<hr />
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<div class="column is-two-fifths">
+    <div class="box">
+        <form asp-action="Add">
+            <div class="form-group">
+                <label asp-for="Id" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="Id" class="form-control" />
+                    <span asp-validation-for="Id" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FirstName" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LastName" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AddressLine" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="AddressLine" class="form-control" />
+                    <span asp-validation-for="AddressLine" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="PhoneNumber" class="form-control" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Cash" class="col-md-2 control-label"></label>
+                <div class="col-md-5">
+                    <input asp-for="Cash" class="form-control" />
+                    <span asp-validation-for="Cash" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to Order</a>
+</div>
